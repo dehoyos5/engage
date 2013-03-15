@@ -6,10 +6,21 @@
  * Licensed under the MIT license
  */
 
+body {
+  background: lightblue;
+}
 
+.curl_link {
+  position:  absolute;
+  top: 40px;
+  left:  0px;
+  width: 130px;
+  height: 130px;
+}
 
 .curl {
   width: 120px;
+  cursor: pointer;
   height: 120px;
   position: absolute;
   top: 40px;
@@ -29,6 +40,13 @@
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
+  &.purple{
+    background:-webkit-gradient(linear,100% 100%,0 0,from(white),color-stop(lightpurple,0.33),color-stop(purple,0.67),to(darkpurple));
+    background:-webkit-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
+    background:   -moz-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
+    background:     -o-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
+    background:        linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
+  }
   &:before {
     content: '';
     position: absolute;
@@ -95,17 +113,19 @@
 
 h1 {
   text-align: center;
-  font-size: 8em;
-  text-transform: uppercase;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  color: white;
-  margin: 0.5em 0 0.25em;
-  padding: 0;
+  font-size: 18px;
+  color: black;
 }
 
 p {
   text-align: center;
   font-weight: bold;
-  color: lightblue;
+  color: black;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.settings_container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
