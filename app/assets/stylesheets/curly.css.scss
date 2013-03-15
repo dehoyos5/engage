@@ -1,0 +1,111 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/**
+ * Author: @joostkiens
+ * Licensed under the MIT license
+ */
+
+
+
+.curl {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  /*linear-gradient*/
+  background: -webkit-gradient(linear, 100% 100%, 0 0, from(white), color-stop(#f3f3f3, 0.45), color-stop(#dddddd, 0.5), color-stop(#aaaaaa, 0.5), color-stop(#bbbbbb, 0.56), color-stop(#cccccc, 0.62), color-stop(#f3f3f3, 0.8), color-stop(white, 1));
+  background: -webkit-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: -moz-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: -o-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  /*box-shadow*/
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*transition*/
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 12.5%;
+    bottom: 5.8%;
+    width: 70%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 55%;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    /*transform*/
+    -webkit-transform: skew(-10deg) rotate(-6deg);
+    -moz-transform: skew(-10deg) rotate(-6deg);
+    -ms-transform: skew(-10deg) rotate(-6deg);
+    -o-transform: skew(-10deg) rotate(-6deg);
+    transform: skew(-10deg) rotate(-6deg);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 12.5%;
+    bottom: 5.8%;
+    width: 70%;
+    max-width: 300px;
+    max-height: 100px;
+    height: 55%;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.3);
+    /*transform*/
+    -webkit-transform: skew(-10deg) rotate(-6deg);
+    -moz-transform: skew(-10deg) rotate(-6deg);
+    -ms-transform: skew(-10deg) rotate(-6deg);
+    -o-transform: skew(-10deg) rotate(-6deg);
+    transform: skew(-10deg) rotate(-6deg);
+    left: auto;
+    right: 5.8%;
+    bottom: auto;
+    top: 14.16%;
+    /*transform*/
+    -webkit-transform: skew(-15deg) rotate(-84deg);
+    -moz-transform: skew(-15deg) rotate(-84deg);
+    -ms-transform: skew(-15deg) rotate(-84deg);
+    -o-transform: skew(-15deg) rotate(-84deg);
+    transform: skew(-15deg) rotate(-84deg);
+  }
+  &:hover {
+    width: 240px;
+    height: 240px;
+    &:before, &:after {
+      /*box-shadow*/
+      -webkit-box-shadow: 0 24px 30px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 24px 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 24px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 8em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 0.5em 0 0.25em;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  color: lightblue;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}

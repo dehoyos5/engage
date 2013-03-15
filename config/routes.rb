@@ -3,6 +3,8 @@ Engage::Application.routes.draw do
   get "content/gold"
   get "content/silver"
   get "content/platinum"
+  match "curly" => "users#curly"
+
   authenticated :user do
     root :to => 'home#index'
   end

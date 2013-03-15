@@ -13,6 +13,9 @@
     <li>
     <%= link_to 'Edit account', edit_user_registration_path %>
     </li>
+    <li>
+      <a href="/curly">Curly</a>
+    </li>
     <% if current_user.has_role? :admin %>
       <li>
       <%= link_to 'Admin', users_path %>
