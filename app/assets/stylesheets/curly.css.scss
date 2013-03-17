@@ -41,11 +41,11 @@ body {
   -o-transition: all .5s ease;
   transition: all .5s ease;
   &.purple{
-    background:-webkit-gradient(linear,100% 100%,0 0,from(white),color-stop(lightpurple,0.33),color-stop(purple,0.67),to(darkpurple));
-    background:-webkit-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
-    background:   -moz-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
-    background:     -o-linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
-    background:        linear-gradient(			135deg, 			white,lightpurple,purple,darkpurple	);
+    background: -webkit-gradient(linear, 100% 100%, 0 0, from(#f9d4ff), color-stop(#efacf3, 0.45), color-stop(#d762dd, 0.5), color-stop(#aa47a9, 0.5), color-stop(#bb25b9, 0.56), color-stop(#bb25b9, 0.62), color-stop(#bb25b9, 0.8), color-stop(#bb25b9, 1));
+    background: -webkit-linear-gradient(135deg, #f9d4ff, #efacf3 45%, #d762dd 50%, #aa47a9 50%, #bb25b9 56%, #bb25b9 62%, #bb25b9 80%, #bb25b9 100%);
+    //background: -moz-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+    //background: -o-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+    //background: linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
   }
   &:before {
     content: '';
