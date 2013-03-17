@@ -1,17 +1,74 @@
 
-<h1>
-  Example
-</h1>
-  <div onclick="location.href = 'http://justinkasad.com'" class="curl"></div>
-<h1>CSS Page Curl</h1>
-<p>hover over page curl to resize</p>
-<div class="settings_container">
-<input type="button" onclick="$('.curl').toggleClass('purple')" value="Make Purple">
-<br>
-<input type="input" class="url_input_field" value="http://" >
-<input type="button" class="url_input_field_button" value="Change Link">
+<div onclick="location.href = 'http://justinkasad.com'" class="curl"></div>
 
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+      <div class="sidebar-nav">
+	<div class="well" style="width:300px; padding: 8px 0;">
+		<ul class="nav nav-list"> 
+		  <li class="nav-header">Widget Settings</li>        
+		  <li><a href="#"><i class="icon-tasks"></i> Dashboard</a></li>
+          <li><a href="#"><i class="icon-plus"></i> Create New Curlie <span class="badge badge-info"></span></a></li>
+		</ul>
+	</div>
+	</div>
+    </div>
+    <div class="span10">
+      <!--Body content-->
+
+ <div class="settings_container">
+ 			 <h1>Create a Curly</h1>
+	<div class="accordion" id="accordion2">
+ 	 <div class="accordion-group">
+   	 <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Step #1 - Insert Link
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+		<input type="text" name="name" class="url_input_field  span8" placeholder="ie - https://www.google.com"> 
+		<input type="button" class="url_input_field_button btn" value="Submit">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Step #2 - Upload Image
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Upload an image and we will condense it, turn it to a PNG, and save it...
+      </div>
+      <input type="button" class="btn btn-large btn-success" value="Submit">
+    </div>
+  </div>
+   <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+        Step #3 - Settings
+      </a>
+    </div>
+    <div id="collapseThree" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>
+</div>	
+<input type="button" class="btn btn-large btn-success" value="Generate Widget Code">
+		</div>
+
+    </div>
+  </div>
 </div>
+
+
+
 
 
 
