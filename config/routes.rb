@@ -1,4 +1,7 @@
 Engage::Application.routes.draw do
+  resources :posts
+
+
   mount StripeEvent::Engine => '/stripe'
   get "content/gold"
   get "content/silver"
