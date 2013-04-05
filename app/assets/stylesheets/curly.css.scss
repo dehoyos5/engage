@@ -7,7 +7,12 @@
  */
 
 
-
+.curl_wrapper{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1000000;
+}
 .curl_link {
   position:  absolute;
   top: 40px;
@@ -15,29 +20,39 @@
   width: 130px;
   height: 130px;
 }
-
+.background_img {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/300px-Hopetoun_falls.jpg') no-repeat;
+  width: 115px;
+  height: 118px;
+  background-size: cover;
+  position:  absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
 .curl {
   width: 120px;
   cursor: pointer;
   height: 120px;
+  overflow: hidden;
   position: absolute;
   top: 40px;
   left: 0;
   /*linear-gradient*/
-  background: -webkit-gradient(linear, 100% 100%, 0 0, from(white), color-stop(#f3f3f3, 0.45), color-stop(#dddddd, 0.5), color-stop(#aaaaaa, 0.5), color-stop(#bbbbbb, 0.56), color-stop(#cccccc, 0.62), color-stop(#f3f3f3, 0.8), color-stop(white, 1));
-  background: -webkit-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
-  background: -moz-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
-  background: -o-linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
-  background: linear-gradient(135deg, white, #f3f3f3 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: -webkit-gradient(linear, 100% 100%, 0 0, from(rgba(255, 255, 255, .1)), color-stop(rgba(243, 243, 243, .1), 0.45), color-stop(#dddddd, 0.5), color-stop(#aaaaaa, 0.5), color-stop(#bbbbbb, 0.56), color-stop(#cccccc, 0.62), color-stop(#f3f3f3, 0.8), color-stop(white, 1));
+  background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .1), rgba(243, 243, 243, .1) 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: -moz-linear-gradient(135deg, rgba(255, 255, 255, .1), rgba(243, 243, 243, .1) 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: -o-linear-gradient(135deg, rgba(255, 255, 255, .1), rgba(243, 243, 243, .1) 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .1), rgba(243, 243, 243, .1) 45%, #dddddd 50%, #aaaaaa 50%, #bbbbbb 56%, #cccccc 62%, #f3f3f3 80%, white 100%);
   /*box-shadow*/
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   /*transition*/
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
   &.purple{
     background: -webkit-gradient(linear, 100% 100%, 0 0, from(#f9d4ff), color-stop(#efacf3, 0.45), color-stop(#d762dd, 0.5), color-stop(#aa47a9, 0.5), color-stop(#bb25b9, 0.56), color-stop(#bb25b9, 0.62), color-stop(#bb25b9, 0.8), color-stop(#bb25b9, 1));
     background: -webkit-linear-gradient(135deg, #f9d4ff, #efacf3 45%, #d762dd 50%, #aa47a9 50%, #bb25b9 56%, #bb25b9 62%, #bb25b9 80%, #bb25b9 100%);
