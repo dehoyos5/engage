@@ -1,6 +1,31 @@
 <%= link_to "Engage.io", root_path, :class => 'brand' %>
-<ul class="nav">
+
+
+<div class="btn-group" style="float:right">
+  <a class="btn dropdown-toggle btn-danger" data-toggle="dropdown" href="#">
+    Action
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+    
+      <% if current_user.has_role? :admin %>
+      <li>
+      <%= link_to 'Admin', users_path %>
+      </li>
+    <% end %>
+    
   <% if user_signed_in? %>
+    <li>
+      <a href="/dashboard"> Dashboard</a>
+    </li>
+    <li>
+    <%= link_to 'Edit account', edit_user_registration_path %>
+    </li>
+    <li>
+      <a href="/curly">Curly</a>
+    </li>
+   
+     <% if user_signed_in? %>
     <li>
     <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
     </li>
@@ -9,19 +34,7 @@
     <%= link_to 'Login', new_user_session_path %>  
     </li>
   <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Edit account', edit_user_registration_path %>
-    </li>
-    <li>
-      <a href="/curly">Curly</a>
-    </li>
-    <% if current_user.has_role? :admin %>
-      <li>
-      <%= link_to 'Admin', users_path %>
-      </li>
-    <% end %>
   <% end %>
-</ul>
-
-
+    <!-- dropdown menu links -->
+  </ul>
+</div>
