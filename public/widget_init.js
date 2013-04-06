@@ -1,5 +1,5 @@
 ;(function(){
-//  <script type="text/javascript" src="http://localhost:3001/widget_init.js#text=uniquehello"></script>
+//  <script type="text/javascript" src="http://localhost:3001/widget_init.js#title=test%20"></script>
   function getScriptUrl() {
     var scripts = document.getElementsByTagName('script'),
       element,
@@ -34,8 +34,11 @@
     return params;
   };
 
-  var url = getScriptUrl()
+  var url = getScriptUrl();
   var params = getQueryParameters(url.replace(/^.*\#/, ''));
+
+  params.title = params.title || 'Hello World!';
+  params.text_color = params.text_color || 'black';
 
   var body = document.getElementsByTagName('body')[0];
   body.style.margin = '50px 0 0 0';
