@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="heatmapArea" class="well" style="width:610px;padding:0;height:400px;cursor:pointer;position:relative;">
+                        </div>
+<script type="text/javascript" src="/js/heatmap.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+ 
+    // heatmap configuration
+    var config = {
+        element: document.getElementById("heatmapArea"),
+        radius: 30,
+        opacity: 50,
+        legend: {
+            position: 'br',
+            title: 'Example Distribution'
+        }   
+    };
+    
+    //creates and initializes the heatmap
+    var heatmap = h337.create(config);
+ 
+    document.getElementById("heatmapArea").onclick = function(e){
+        // layerX and layerY is deprecated and will be removed,
+        // use another way of determining the x and y position in an element
+        heatmap.store.addDataPoint(e.layerX, e.layerY, 1);
+    };
+};
+</script>
+</html>
