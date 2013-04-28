@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Topbar text:</b>
+  <%= @topbar.topbar_text %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @topbar.color %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @topbar.link %>
+</p>
+
+
+<%= link_to 'Edit', edit_topbar_path(@topbar) %> |
+<%= link_to 'Back', topbars_path %>

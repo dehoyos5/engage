@@ -1,0 +1,13 @@
+<%= simple_form_for(@topbar) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :topbar_text %>
+    <%= f.input :color %>
+    <%= f.input :link %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

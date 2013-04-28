@@ -1,0 +1,27 @@
+<h1>Listing topbars</h1>
+
+<table>
+  <tr>
+    <th>Topbar text</th>
+    <th>Color</th>
+    <th>Link</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @topbars.each do |topbar| %>
+  <tr>
+    <td><%= topbar.topbar_text %></td>
+    <td><%= topbar.color %></td>
+    <td><%= topbar.link %></td>
+    <td><%= link_to 'Show', topbar %></td>
+    <td><%= link_to 'Edit', edit_topbar_path(topbar) %></td>
+    <td><%= link_to 'Destroy', topbar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Topbar', new_topbar_path %>
