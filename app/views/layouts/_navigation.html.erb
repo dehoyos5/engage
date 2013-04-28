@@ -8,7 +8,7 @@
   </a>
   <ul class="dropdown-menu">
     
-      <% if current_user.has_role? :admin %>
+      <% if current_user and current_user.has_role? :admin %>
       <li>
       <%= link_to 'Admin', users_path %>
       </li>

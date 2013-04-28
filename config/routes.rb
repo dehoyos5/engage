@@ -7,6 +7,7 @@ Engage::Application.routes.draw do
   get "content/silver"
   get "content/platinum"
   match "curly" => "users#curly"
+  match "topbar" => "topbars#topbar"
   match "test" => "users#test"
   match "dashboard" => "users#dashboard"
 
